@@ -1,0 +1,12 @@
+- name: PHP
+  icon: "fab fa-php"
+  time: 8
+- name: C#
+  icon: "fas fa-hashtag"
+  time: 1
+- name: Java
+  icon: "fab fa-java"
+  time: 1
+- name: SVN
+  icon: "fas fa-code-branch"
+  time: 4

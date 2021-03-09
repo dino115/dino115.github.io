@@ -1,0 +1,60 @@
+- company: mixxt GmbH, Bonn
+  link: https://www.tixxt.com
+  position: Leiter IT-Systeme
+  from: 06/2015
+  to: "<b>heute</b>"
+  info:
+    - Fachliche und disziplinarische Führung des Entwicklerteams
+    - Anforderungsanalysen und Konzeption
+    - CodeReviews und Pair-programming
+    - Softwareentwicklung in Ruby
+    - JavaScript mit backbone.js und React
+    - Mobile-App Entwicklung mit React-Native
+    - Datenbanken MongoDB, SQL-Datenbanken (MySQL, PostgreSQL, SQLite), Elasticsearch, Redis
+    - Mitarbeiterauswahl, u.a. führen von Bewerbungsgesprächen, etc.
+    - Ausbildung von Fachinformatikern
+- company: mixxt GmbH, Bonn
+  link: https://www.tixxt.com
+  position: Software Entwickler
+  from: 09/2010
+  to: 05/2015
+  info:
+    - Softwareentwicklung in Ruby
+    - Softwareentwicklung in PHP (legacy code)
+    - Frontendentwicklung mit HTML, CSS
+    - JavaScript mit jQuery und backbone.js
+    - Datenbanken MySQL und MongoDB
+    - DevOps (Ubuntu, Chef, Vagrant)
+- company: mixxt GmbH, Bonn
+  link: https://www.tixxt.com
+  position: Freiberuflicher Software Entwickler
+  from: 05/2009
+  to: 08/2010
+  info:
+    - Frameworkentwicklung in PHP
+    - Frontendentwicklung mit HTML, CSS
+    - JavaScript mit jQuery
+- company: center-tag OHG, Bonn
+  link: https://www.center-tag.net
+  position: Freiberuflicher Software Entwickler
+  from: 01/2010
+  to: 12/2011
+  info:
+    - Datenbankgestütztes hoch-dynamisches Umfragetool
+    - Beratung und Optimierung bei Web-Frontends
+- company: papaya Software GmbH, Köln
+  link: https://www.papaya-cms.com
+  position: Freiberuflicher Software Entwickler
+  from: 05/2008
+  to: 09/2008
+  info:
+    - Modulentwicklung in PHP für das papayaCMS
+    - Frontendentwicklung mit HTML, CSS und JavaScript
+    - Templating mit XML und XSLT
+- company: papaya Software GmbH, Köln
+  link: https://www.papaya-cms.com
+  position: Praktikant Software Entwicklung
+  from: 05/2007
+  to: 07/2007
+  info:
+    - PHP Web-Entwicklung

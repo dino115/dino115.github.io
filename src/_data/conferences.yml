@@ -1,0 +1,28 @@
+- name: ElixirConf EU
+  link: http://www.archive.elixirconf.eu/elixirconfeu2019
+  city: Prag
+  year: 2019
+- name: tixxt Digital Change Lab
+  link: https://www.tixxt.com/de/tixxt-digital-change-lab-2019-danke
+  city: Bonn
+  year: 2019
+- name: React Amsterdam
+  link: https://archive.reactsummit.com/2018
+  city: Amsterdam
+  year: 2018
+- name: tixxt Digital Change Lab
+  link: https://www.tixxt.com/de/inspiration-austausch-das-1-tixxt-digital-change-lab
+  city: Bonn
+  year: 2018
+- name: ReactiveConf
+  link: https://2016.reactiveconf.com
+  city: Bratislava
+  year: 2016
+- name: RailsCamp
+  link: http://2014.railscamp.de
+  city: Köln
+  year: 2014
+- name: Eurucamp EU
+  link: http://2013.eurucamp.org
+  city: Berlin
+  year: 2013

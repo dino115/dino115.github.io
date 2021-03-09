@@ -1,0 +1,28 @@
+source: "./src"
+destination: "./docs"
+timezone: "Europe/Berlin"
+title: "Axel Wahlen"
+tagline: "Web-Visitenkarte"
+description: "Web-Visitenkarte von Axel Wahlen"
+url: "https://axel-wahlen.de"
+logo: "/assets/images/logo.png"
+locale: "de_DE"
+author: "Axel Wahlen"
+twitter:
+  username: "dino115"
+  card: "summary"
+social:
+  name: "Axel Wahlen"
+  links:
+    - https://github.com/dino115
+    - https://www.xing.com/profile/Axel_Wahlen
+    - https://www.linkedin.com/in/axel-wahlen
+    - https://twitter.com/dino115
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

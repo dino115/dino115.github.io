@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% seo %}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="/assets/js/app.js" type="application/javascript" language="JavaScript"></script>
+
+    <script src="https://kit.fontawesome.com/711e075acd.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" sizes="180x180">
+  </head>
+  <body>
+    {% for i in (1..9) %}
+      <div class='light line{{ i }}'></div>
+    {% endfor %}
+
+    <div class="container-md">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="wrapper shadow">
+            <div class="wrapper-border">
+              <div class="row">
+                <div class="col-md-4 sidebar">
+                  <img src="/assets/images/profile.png" class="img-fluid rounded" />
+
+                  <div class="row justify-content-center my-4 social-connect">
+                    {% for item in site.data.social_links %}
+                      <div class="col-2 col-md-6 col-lg-6 mb-md-1">
+                        <a class="btn btn-outline-dark btn-sm d-flex justify-content-around align-items-center" href="{{ item.link }}" target="_blank" rel="nofollow noopener" title="Besuchen Sie mich auf {{ item.name }}" data-toggle="tooltip">
+                          <i class="{{ item.icon }} fa-2x"></i>
+                          <span class="d-none d-lg-inline">{{ item.name }}</span>
+                        </a>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <div class="my-4 d-none d-md-block contact">
+                    <div class="row justify-content-center">
+                      <div class="col-12">Sie möchten mit mir zusammenarbeiten?</div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-12">
+                        <a class="btn btn-outline-dark btn-sm my-2 d-flex justify-content-around align-items-center email-contact" href="#" title="Kontakt per E-Mail" data-toggle="tooltip">
+                          <i class="fas fa-envelope-open-text fa-2x"></i>
+                          <span class="d-none d-lg-inline">Kontakt per E-Mail</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-12">
+                        <a class="btn btn-outline-dark btn-sm my-2 d-flex justify-content-around align-items-center phone-contact" href="#" title="Kontakt per Telefon" data-toggle="tooltip">
+                          <i class="fas fa-phone-alt fa-2x"></i>
+                          <span class="d-none d-lg-inline">Kontakt per Telefon</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <h1>Axel Wahlen</h1>
+                  <em>Full-Stack Web-Entwickler // Leiter IT-Systeme</em>
+
+                  <div class="my-5">
+                    {{ content }}
+                  </div>
+
+                  <span class="text-info handwriting">Axel Wahlen</span>
+                </div>
+              </div>
+              <div class="my-4 d-block d-md-none contact">
+                <div class="row justify-content-center">
+                  <div class="col-12">Sie möchten mit mir zusammenarbeiten?</div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-6">
+                    <a class="btn btn-outline-dark btn-sm my-2 d-flex justify-content-around align-items-center email-contact" href="#" title="Kontakt per E-Mail" data-toggle="tooltip">
+                      <i class="fas fa-envelope-open-text fa-2x"></i>
+                      <span class="d-none d-sm-inline">Kontakt per E-Mail</span>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a class="btn btn-outline-dark btn-sm my-2 d-flex justify-content-around align-items-center phone-contact" href="#" title="Kontakt per Telefon" data-toggle="tooltip">
+                      <i class="fas fa-phone-alt fa-2x"></i>
+                      <span class="d-none d-sm-inline">Kontakt per Telefon</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-4 imprint">
+                <div class="row border-top pt-5">
+                  <div class="col-12 col-md-8 offset-md-4">
+                    Verantwortlich gemäß § 5 Telemediengesetz:
+                    <br />
+                    <address>
+                      <strong>Axel Wahlen</strong>
+                      <br />
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

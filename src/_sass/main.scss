@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #373B44;
+  background: radial-gradient(#4286f4, #373B44);
+  height: 100vh;
+  min-width: 300px;
+  margin: 0;
+  overflow-y: hidden;
+  animation: fadeIn 1 1s ease-out;
+}
+
+.wrapper {
+  margin: 10vh auto;
+  height: 80vh;
+  background: #FFFFFF;
+  padding: 1em;
+  overflow: hidden;
+
+  .wrapper-border {
+    border: 1px solid #999;
+    padding: 1em;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.social-connect {
+  a.btn {
+    min-width: fit-content;
+  }
+}
+
+.languages {
+  .progress {
+    height: 3em;
+  }
+
+  .progress-bar {
+    text-align: left;
+    padding-left: 1em;
+  }
+}
+
+.level-item {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  text-align: center !important;
+  align-items: center;
+
+  .heading {
+    display: block;
+    font-size: .75em;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+
+.handwriting {
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+}
+
+// Background effect
+
+.light {
+  background-color: white;
+  opacity: .75;
+  box-shadow: #e9f1f1 0 0 20px 2px;
+  position: absolute;
+  margin: auto;
+  width: 0;
+  top: 100vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@keyframes floatUp {
+  0% { top: 100vh; opacity: 0; }
+  25% { opacity: 1; }
+  50% { top: 0; opacity: .8; }
+  75% { opacity: 1; }
+  100% { top: -100vh; opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@mixin floating($time, $scale) {
+  animation: floatUp $time infinite linear;
+  transform: scale($scale);
+}
+
+.line1 { @include floating(8s, 1.0); }
+.line2 { @include floating(14s, 1.6); left: 15%; }
+.line3 { @include floating(5s, .5); left: -15%; }
+.line4 { @include floating(9s, 1.2); left: -34%; }
+.line5 { @include floating(16s, 2.2); left: -57%; }
+.line6 { @include floating(6s, .8); left: -81%; }
+.line7 { @include floating(10.6s, 3.2); left: 37%; }
+.line8 { @include floating(9.4s, 1.7); left: 62%; }
+.line9 { @include floating(8.2s, 0.9); left: 85%; }

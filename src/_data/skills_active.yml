@@ -1,0 +1,60 @@
+- name: Ruby
+  icon: "fas fa-gem text-danger"
+  time: 9
+- name: JavaScript
+  icon: "fab fa-js text-primary"
+  time: 15
+- name: Elixir
+  icon: "fab fa-erlang"
+  time: 1
+- name: React
+  icon: "fab fa-react"
+  time: 4
+- name: React-Native
+  icon: "fas fa-mobile-alt"
+  time: 4
+- name: HTML
+  icon: "fab fa-html5"
+  time: 18
+- name: CSS
+  icon: "fab fa-css3-alt"
+  time: 15
+- name: jQuery
+  icon: "fas fa-code"
+  time: 12
+- name: CoffeeScript
+  icon: "fas fa-coffee"
+  time: 9
+- name: Backbone.js
+  icon: "fab fa-js-square"
+  time: 8
+- name: Sass
+  icon: "fab fa-sass"
+  time: 9
+- name: SQL
+  icon: "fas fa-database"
+  time: 16
+- name: MongoDB
+  icon: "fas fa-database"
+  time: 9
+- name: ElasticSearch
+  icon: "fas fa-search"
+  time: 4
+- name: git
+  icon: "fab fa-git-alt"
+  time: 9
+- name: Webpack
+  icon: "fab fa-js-square"
+  time: 4
+- name: Docker
+  icon: "fab fa-docker"
+  time: 1
+- name: Terminal & Bash
+  icon: "fas fa-terminal"
+  time: 9
+- name: Ubuntu (Server)
+  icon: "fab fa-ubuntu"
+  time: 9
+- name: MacOS
+  icon: "fas fa-laptop-code"
+  time: 11

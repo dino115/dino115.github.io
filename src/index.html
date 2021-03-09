@@ -1,0 +1,128 @@
+---
+title: Online Lebenslauf
+---
+
+<h3 class="mt-5 mb-3">Kernkompetenzen</h3>
+<div class="row my-2">
+  <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
+    <div class="level-item text-secondary">
+      <div>
+        <p class="heading">Softwareentwicklung</p>
+        <p class="title text-info">15+ Jahre</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
+    <div class="level-item text-secondary">
+      <div>
+        <p class="heading">Teamleitung</p>
+        <p class="title">6 Jahre</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
+    <div class="level-item text-secondary">
+      <div>
+        <p class="heading">Ausbildung</p>
+        <p class="title">6 Jahre</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
+    <div class="level-item text-secondary">
+      <div>
+        <p class="heading">Konzeption</p>
+        <p class="title">8 Jahre</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 class="mt-5 mb-3">Technologien</h3>
+<div class="row my-2">
+  {% for item in site.data.skills_active %}
+  <div class="col-6 col-sm-3 d-flex flex-column justify-content-center align-items-center mb-4">
+    <i class="d-block fa-2x {{ item.icon }}"></i>
+    <span class="d-block technology-name">{{ item.name }}</span>
+    <span class="d-block technology-experience text-info">{{ item.time }} {% if item.time == 1 %}Jahr{% else %}Jahre{% endif %}</span>
+  </div>
+  {% endfor %}
+</div>
+<div class="row my-2">
+  <div class="col-12">
+    <p>Weiterhin habe ich Erfahrung mit den folgenden Technologien, diese allerdings in den letzten 5 Jahren nicht mehr aktiv verwendet.</p>
+  </div>
+  {% for item in site.data.skills_inactive %}
+  <div class="col-6 col-sm-3 d-flex flex-column justify-content-center align-items-center mb-4">
+    <i class="d-block fa-2x {{ item.icon }}"></i>
+    <span class="d-block technology-name">{{ item.name }}</span>
+    <span class="d-block technology-experience text-muted">{{ item.time }} {% if item.time == 1 %}Jahr{% else %}Jahre{% endif %}</span>
+  </div>
+  {% endfor %}
+</div>
+
+<h3 class="mt-5 mb-3">Berufserfahrung</h3>
+{% for item in site.data.work_experience %}
+  <div class="row my-2">
+    <div class="col-md-4">
+      {{ item.from }} bis {{ item.to }}
+    </div>
+    <div class="col-md-8">
+      <a href="{{ item.link }}" target="_blank" rel="nofollow noopener">
+        <strong>{{ item.company }}</strong>
+      </a>
+      <br />
+      <em>{{ item.position }}</em>
+
+      <ul>
+        {% for info in item.info %}
+          <li>{{ info }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endfor %}
+
+<h3 class="mt-5 mb-3">Abschlüsse & Zertifikate</h3>
+{% for item in site.data.certificates %}
+  <div class="row my-2">
+    <div class="col-md-4">
+      <strong>{{ item.time }}</strong>
+    </div>
+    <div class="col-md-8">
+      {{ item.name }}
+    </div>
+  </div>
+{% endfor %}
+
+<h3 class="mt-5 mb-3">Konferenzen</h3>
+{% for item in site.data.conferences %}
+  <div class="row my-2">
+    <div class="col-md-2">
+      <strong>{{ item.year }}</strong>
+    </div>
+    <div class="col-md-4">
+      {{ item.city }}
+    </div>
+    <div class="col-md-6">
+      {% if item.link %}
+        <a href="{{ item.link }}" target="_blank" rel="nofollow noopener">
+          <strong>{{ item.name }}</strong>
+        </a>
+      {% else %}
+        <strong>{{ item.name }}</strong>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+<h3 class="mt-5 mb-3">Sprachen</h3>
+{% for item in site.data.languages %}
+  <div class="row my-2 languages">
+    <div class="col-12">
+      <div class="progress">
+        <div class="progress-bar bg-info" role="progressbar" style="width: {{ item.percentage }}%;" aria-valuenow="{{ item.percentage }}" aria-valuemin="0" aria-valuemax="100">{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
