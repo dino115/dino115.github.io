@@ -4,36 +4,28 @@
   from: 06/2015
   to: "<b>heute</b>"
   info:
-    - Fachliche und disziplinarische Führung des Entwicklerteams
+    - Fachliche und administrative Führung des Entwicklerteams
     - Anforderungsanalysen und Konzeption
     - CodeReviews und Pair-programming
-    - Softwareentwicklung in Ruby
+    - Softwareentwicklung in Ruby und Elixir
     - JavaScript mit backbone.js und React
     - Mobile-App Entwicklung mit React-Native
     - Datenbanken MongoDB, SQL-Datenbanken (MySQL, PostgreSQL, SQLite), Elasticsearch, Redis
-    - Mitarbeiterauswahl, u.a. führen von Bewerbungsgesprächen, etc.
+    - DevOps (Ubuntu, Chef, Vagrant, Gitlab-CI, Docker)
+    - Mitarbeiterauswahl und Betreuung, u.a. führen von Bewerbungsgesprächen, führen von Mitarbeitergesprächen, etc.
     - Ausbildung von Fachinformatikern
 - company: mixxt GmbH, Bonn
   link: https://www.tixxt.com
   position: Software Entwickler
-  from: 09/2010
+  from: 05/2009
   to: 05/2015
   info:
     - Softwareentwicklung in Ruby
-    - Softwareentwicklung in PHP (legacy code)
+    - Softwareentwicklung in PHP (überwiegend legacy code)
     - Frontendentwicklung mit HTML, CSS
     - JavaScript mit jQuery und backbone.js
     - Datenbanken MySQL und MongoDB
     - DevOps (Ubuntu, Chef, Vagrant)
-- company: mixxt GmbH, Bonn
-  link: https://www.tixxt.com
-  position: Freiberuflicher Software Entwickler
-  from: 05/2009
-  to: 08/2010
-  info:
-    - Frameworkentwicklung in PHP
-    - Frontendentwicklung mit HTML, CSS
-    - JavaScript mit jQuery
 - company: center-tag OHG, Bonn
   link: https://www.center-tag.net
   position: Freiberuflicher Software Entwickler

@@ -37,7 +37,7 @@
                   <div class="row justify-content-center my-4 social-connect">
                     {% for item in site.data.social_links %}
                       <div class="col-2 col-md-6 col-lg-6 mb-md-1">
-                        <a class="btn btn-outline-dark btn-sm d-flex justify-content-around align-items-center" href="{{ item.link }}" target="_blank" rel="nofollow noopener" title="Besuchen Sie mich auf {{ item.name }}" data-toggle="tooltip">
+                        <a class="btn btn-outline-dark btn-sm d-flex justify-content-between align-items-center" href="{{ item.link }}" target="_blank" rel="nofollow noopener" title="Besuchen Sie mich auf {{ item.name }}" data-toggle="tooltip">
                           <i class="{{ item.icon }} fa-2x"></i>
                           <span class="d-none d-lg-inline">{{ item.name }}</span>
                         </a>
@@ -68,7 +68,9 @@
                 </div>
                 <div class="col-md-8">
                   <h1>Axel Wahlen</h1>
-                  <em>Full-Stack Web-Entwickler // Leiter IT-Systeme</em>
+                  <em>Leiter IT-Systeme // Full-Stack Web-Entwickler</em>
+                  <br />
+                  <a href="https://www.tixxt.com" target="_blank" rel="nofollow noopener">@mixxt GmbH</a>
 
                   <div class="my-5">
                     {{ content }}
