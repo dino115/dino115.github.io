@@ -51,10 +51,10 @@
   time: 1
 - name: Terminal & Bash
   icon: "fas fa-terminal"
-  time: 9
+  time: 12
 - name: Ubuntu (Server)
   icon: "fab fa-ubuntu"
-  time: 9
+  time: 10
 - name: MacOS
   icon: "fas fa-laptop-code"
   time: 11

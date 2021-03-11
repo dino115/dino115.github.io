@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap");
-body { font-family: 'Roboto', sans-serif; background: #373B44; background: radial-gradient(#4286f4, #373B44); height: 100vh; min-width: 300px; margin: 0; overflow-y: hidden; animation: fadeIn 1 1s ease-out; }
+body { font-family: 'Roboto', sans-serif; background: #373B44; background: radial-gradient(#4286f4, #373B44); height: 100vh; min-width: 320px; margin: 0; animation: fadeIn 1 2s ease-out; }
 
-.wrapper { margin: 10vh auto; height: 80vh; background: #FFFFFF; padding: 1em; overflow: hidden; }
+.wrapper { margin: 0 auto; min-height: 100vh; background: #FFFFFF; }
 
-.wrapper .wrapper-border { border: 1px solid #999; padding: 1em; height: 100%; overflow-x: hidden; overflow-y: auto; }
+.wrapper .wrapper-border { border: 1px solid #999; height: 100%; }
 
-.sidebar { text-align: center; }
+.sidebar { text-align: center; color: #FFFFFF; }
 
 .social-connect a.btn { min-width: fit-content; }
 

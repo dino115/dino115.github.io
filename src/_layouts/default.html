@@ -25,61 +25,58 @@
       <div class='light line{{ i }}'></div>
     {% endfor %}
 
-    <div class="container-md">
+    <div class="container-lg wrapper">
       <div class="row">
         <div class="col-xl-12">
-          <div class="wrapper shadow">
-            <div class="wrapper-border">
-              <div class="row">
-                <div class="col-md-4 sidebar">
-                  <img src="/assets/images/profile.png" class="img-fluid rounded" />
+          <div class="row">
+            <div class="col-md-4 sidebar bg-dark p-3 p-md-4 p-lg-5">
+              <img src="/assets/images/profile.png" class="img-fluid img-thumbnail rounded" />
 
-                  <div class="row justify-content-center my-4 social-connect">
-                    {% for item in site.data.social_links %}
-                      <div class="col-2 col-md-6 col-lg-6 mb-md-1">
-                        <a class="btn btn-outline-dark btn-sm d-flex justify-content-between align-items-center" href="{{ item.link }}" target="_blank" rel="nofollow noopener" title="Besuchen Sie mich auf {{ item.name }}" data-toggle="tooltip">
-                          <i class="{{ item.icon }} fa-2x"></i>
-                          <span class="d-none d-lg-inline">{{ item.name }}</span>
-                        </a>
-                      </div>
-                    {% endfor %}
+              <div class="row justify-content-center my-4 social-connect">
+                {% for item in site.data.social_links %}
+                  <div class="col-2 col-md-6 col-lg-6 mb-md-1">
+                    <a class="btn btn-outline-light btn-sm d-flex justify-content-center justify-content-lg-between align-items-center" href="{{ item.link }}" target="_blank" rel="nofollow noopener" title="Besuchen Sie mich auf {{ item.name }}" data-toggle="tooltip">
+                      <i class="{{ item.icon }} fa-2x"></i>
+                      <span class="d-none d-lg-inline">{{ item.name }}</span>
+                    </a>
                   </div>
-                  <div class="my-4 d-none d-md-block contact">
-                    <div class="row justify-content-center">
-                      <div class="col-12">Sie möchten mit mir zusammenarbeiten?</div>
-                    </div>
-                    <div class="row justify-content-center">
-                      <div class="col-12">
-                        <a class="btn btn-outline-dark btn-sm my-2 d-flex justify-content-around align-items-center email-contact" href="#" title="Kontakt per E-Mail" data-toggle="tooltip">
-                          <i class="fas fa-envelope-open-text fa-2x"></i>
-                          <span class="d-none d-lg-inline">Kontakt per E-Mail</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row justify-content-center">
-                      <div class="col-12">
-                        <a class="btn btn-outline-dark btn-sm my-2 d-flex justify-content-around align-items-center phone-contact" href="#" title="Kontakt per Telefon" data-toggle="tooltip">
-                          <i class="fas fa-phone-alt fa-2x"></i>
-                          <span class="d-none d-lg-inline">Kontakt per Telefon</span>
-                        </a>
-                      </div>
-                    </div>
+                {% endfor %}
+              </div>
+              <div class="my-4 d-none d-md-block contact">
+                <div class="row justify-content-center">
+                  <div class="col-12">Sie möchten mit mir zusammenarbeiten?</div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <a class="btn btn-outline-light btn-sm my-2 d-flex justify-content-around align-items-center email-contact" href="#" title="Kontakt per E-Mail" data-toggle="tooltip">
+                      <i class="fas fa-envelope-open-text fa-2x"></i>
+                      <span class="d-none d-lg-inline">Kontakt per E-Mail</span>
+                    </a>
                   </div>
                 </div>
-                <div class="col-md-8">
-                  <h1>Axel Wahlen</h1>
-                  <em>Leiter IT-Systeme // Full-Stack Web-Entwickler</em>
-                  <br />
-                  <a href="https://www.tixxt.com" target="_blank" rel="nofollow noopener">@mixxt GmbH</a>
-
-                  <div class="my-5">
-                    {{ content }}
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <a class="btn btn-outline-light btn-sm my-2 d-flex justify-content-around align-items-center phone-contact" href="#" title="Kontakt per Telefon" data-toggle="tooltip">
+                      <i class="fas fa-phone-alt fa-2x"></i>
+                      <span class="d-none d-lg-inline">Kontakt per Telefon</span>
+                    </a>
                   </div>
-
-                  <span class="text-info handwriting">Axel Wahlen</span>
                 </div>
               </div>
-              <div class="my-4 d-block d-md-none contact">
+            </div>
+            <div class="col-md-8 p-3 p-md-4 p-lg-5">
+              <h1>Axel Wahlen</h1>
+              <em>Leiter IT-Systeme // Full-Stack Web-Entwickler</em>
+              <br />
+              <a href="https://www.tixxt.com" target="_blank" rel="nofollow noopener">@mixxt GmbH</a>
+
+              <div class="my-5">
+                {{ content }}
+              </div>
+
+              <span class="text-info handwriting">Axel Wahlen</span>
+
+              <div class="my-5 pt-5 border-top d-block d-md-none contact">
                 <div class="row justify-content-center">
                   <div class="col-12">Sie möchten mit mir zusammenarbeiten?</div>
                 </div>
@@ -98,17 +95,14 @@
                   </div>
                 </div>
               </div>
-
-              <div class="my-4 imprint">
-                <div class="row border-top pt-5">
-                  <div class="col-12 col-md-8 offset-md-4">
-                    Verantwortlich gemäß § 5 Telemediengesetz:
+              <div class="row border-top my-5 pt-5 imprint">
+                <div class="col-12">
+                  Verantwortlich gemäß § 5 Telemediengesetz:
+                  <br />
+                  <address>
+                    <strong>Axel Wahlen</strong>
                     <br />
-                    <address>
-                      <strong>Axel Wahlen</strong>
-                      <br />
-                    </address>
-                  </div>
+                  </address>
                 </div>
               </div>
             </div>

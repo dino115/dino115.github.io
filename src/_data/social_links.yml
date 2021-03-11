@@ -10,9 +10,9 @@
 - name: LinkedIn
   link: "https://www.linkedin.com/in/axel-wahlen"
   icon: "fab fa-linkedin"
-- name: Facebook
-  link: "https://www.facebook.com/axel.wahlen"
-  icon: "fab fa-facebook-square"
-- name: Instagram
-  link: "https://www.instagram.com/axel.wahlen"
-  icon: "fab fa-instagram-square"
+#- name: Facebook
+#  link: "https://www.facebook.com/axel.wahlen"
+#  icon: "fab fa-facebook-square"
+#- name: Instagram
+#  link: "https://www.instagram.com/axel.wahlen"
+#  icon: "fab fa-instagram-square"
